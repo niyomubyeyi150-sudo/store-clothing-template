@@ -267,7 +267,7 @@ body {
 .product-card img {
     width: 100%;
     height: 100%;
-    filter: contrast(135%) brightness(95%) saturate(60%) sepia(10%);
+    filter: grayscale(70%);
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -321,4 +321,223 @@ body {
 
 .product-card-btn:hover {
     background: #333333;
+}
+.Subscribe-section {
+    display: block;
+    background-color: #000000;
+    text-align: left;
+    padding: 32px 24px;
+    margin-top: 32px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.Subscribe-section h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.Subscribe-section p {
+    font-size: 17px;
+    margin: 16px 0;
+    text-align: left;
+}
+
+.Subscribe-section input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Subscribe-section button {
+    display: block;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 16px 0 0;
+}
+
+.Subscribe-section button:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* Main footer section layout */
+.feedback-section {
+    background-color: #f1f1f1;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 64px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Section Headings (Contact, About, Store, We accept) */
+.feedback-section h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    color: #000;
+}
+
+/* General Text */
+.feedback-section p {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 0 12px 0;
+    color: #000;
+}
+
+/* 1. Contact Form Column */
+.feedback-form {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.feedback-form h3,
+.feedback-form p {
+    text-align: center;
+}
+
+.feedback-form form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    outline: none;
+}
+
+.feedback-form form input::placeholder {
+    color: #757575;
+}
+
+.feedback-form .btn {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.feedback-form .btn:hover {
+    background-color: #ccc;
+    color: #000000;
+}
+
+/* 2. About Column */
+.about-section {
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.about-section p {
+    margin-bottom: 10px;
+}
+
+.about-section a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about-section a:hover {
+    color: #666;
+}
+
+/* 3. Store Column */
+.store-section {
+    flex: 1 1 250px;
+    text-align: left;
+}
+
+.store-section h3 {
+    margin-top: 24px;
+}
+
+.store-section h3:first-child {
+    margin-top: 0;
+}
+
+.store-section p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.store-section i {
+    width: 16px;
+    text-align: center;
+}
+
+/* Social Media Icons */
+.social-icons {
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    opacity: 0.6;
+}
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 14px;
+}
+.footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .feedback-section {
+        flex-direction: column;
+        padding: 32px 16px;
+        gap: 32px;
+    }
+
+    .feedback-form,
+    .about-section,
+    .store-section {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .about-section {
+        text-align: center;
+    }
 }
